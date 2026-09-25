@@ -1,6 +1,6 @@
 # C Systems Programming
 
-A collection of C programs developed as part of my Systems Programming recitation project at the University of North Texas. These projects explore low-level programming concepts including bitwise operations, binary data representation, pointers, and dynamic memory management in a Linux environment.
+A collection of projects developed as part of my Systems Programming coursework at the **University of North Texas**. These projects explore C programming, low-level data representation, memory management, Linux command-line tools, and text processing.
 
 ## Projects
 
@@ -82,12 +82,52 @@ Original values: 1st = 571, 2nd = 18
 Swapped values: 1st = 18, 2nd = 571
 ```
 
+---
+
+### 3. Regular Expression Text Processing
+
+A Linux command-line project that uses regular expressions to search a text dataset and extract structured information.
+
+#### Tasks Completed
+
+- Extracted email-like patterns
+- Identified lines containing numerical data
+- Extracted Unix-style file paths
+- Identified dates using `/` and `-` separators
+- Redirected extracted results into separate output files
+
+#### Concepts Practiced
+
+- Regular expressions (Regex)
+- Pattern matching
+- Linux command-line processing
+- `egrep`
+- File redirection
+- Text processing
+- Structured data extraction
+- Terminal session recording
+
+#### Example
+
+```bash
+egrep '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' datafile.txt > emails.txt
+```
+
+This searches the dataset for email-like patterns and stores matching lines in `emails.txt`.
+
+[View Regex Text Processing Project](./regex-text-processing)
+
+---
+
 ## Technologies & Tools
 
 - C
 - Linux
 - GCC
+- Bash
 - Command Line
+- Regular Expressions (Regex)
+- `egrep`
 - Git
 - GitHub
 
@@ -101,20 +141,32 @@ Swapped values: 1st = 18, 2nd = 571
 - Dynamic memory allocation
 - Memory management
 - Error handling
+- Regular expressions and pattern matching
+- Command-line text processing
+- File redirection
+- Structured data extraction
 - Low-level problem solving
 
 ## Project Structure
 
 ```text
-c-systems-programming/
+C-Systems-Programming/
 │
 ├── README.md
 ├── ascii_bits.c
-└── xor_swap.c
+├── xor_swap.c
+│
+└── regex-text-processing/
+    ├── README.md
+    └── regex_commands.sh
 ```
 
 ## What I Learned
 
-These projects strengthened my understanding of how C interacts with data and memory at a lower level. I gained hands-on experience using bitwise operators to manipulate individual bits, working with pointers and dynamically allocated memory, and managing memory with `malloc()` and `free()`.
+These projects strengthened my understanding of systems programming and how software interacts with data and memory at a lower level.
 
-I also gained experience compiling, testing, and running C programs in a Linux command-line environment.
+Through the C programming exercises, I gained hands-on experience with **bitwise operations, binary data representation, pointers, dynamic memory allocation, and memory management** using `malloc()` and `free()`.
+
+I also developed experience working in a **Linux command-line environment**, including compiling and testing programs, designing regular expressions, processing text data, redirecting command output, and extracting structured information from larger datasets.
+
+As I continue my Systems Programming coursework, I plan to expand this repository with selected exercises that demonstrate new concepts and technical skills.
